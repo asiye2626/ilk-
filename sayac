@@ -1,0 +1,14 @@
+
+int s, s2, sayac;
+            Console.WriteLine("Bir sayı giriniz");
+            s = Convert.ToInt16(Console.ReadLine());
+            s2 = s;
+            sayac = 0;
+            while (s > 0)
+            {
+                s /= 10; // s=s/10;
+                sayac++;
+            }
+
+            Console.WriteLine("Girilen sayı={0} , {1} basamaklıdır", s2, sayac);
+            Console.ReadKey();
